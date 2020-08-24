@@ -1,0 +1,41 @@
+<!--
+    CMPT 213 Assignment 4
+    Author: Guian Gumpac
+    Email: ggumpac@sfu.ca
+    Student #: 301308462
+-->
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Hangman</title>
+        <link rel="stylesheet" th:href="@{/styles/main.css}"/>
+        <link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+    </head>
+
+    <body>
+        <h1>
+            <th:block th:text="${promptMessage.message}">message</th:block>
+        </h1>
+
+        <p id="author-info">
+            Created by: Guian Gumpac</br>
+            Email: ggumpac@sfu.ca
+        </p>
+
+        <div class="rules-home">
+            <h3 id="rules-header">Rules of the game:</h3>
+            <ul>Guess the word to win</ul>
+            <ul>You can guess one letter at a time or guess the whole word</ul>
+            <ul>If you guess a letter correctly, then it will appear in your progress</ul>
+            <ul>You are only allowed 5 incorrect guesses</ul>
+            <ul>You win if you guess the whole word</ul>
+            <ul>You lose if you reach 6 incorrect guesses and have not guessed the word</ul>
+        </div>
+
+        <form action="#" th:action="@{/game}" method="get" th:object = "${game}">
+            <button id="start-button">Start A New Game</button>
+        </form>
+    </body>
+</html>

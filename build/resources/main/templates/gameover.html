@@ -1,0 +1,38 @@
+<!--
+    CMPT 213 Assignment 4
+    Author: Guian Gumpac
+    Email: ggumpac@sfu.ca
+    Student #: 301308462
+-->
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hangman</title>
+    <link rel="stylesheet" th:href="@{/styles/main.css}"/>
+    <link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+</head>
+<body>
+    <h1>
+        <th:block th:text="${promptMessage.message}">message</th:block>
+    </h1>
+
+    <div id="gameover-img">
+        <img th:src="${picture}" />
+    </div>
+
+    <div id="gameover">
+        <h3 id="gameover-result">You <th:block th:text="${status}">message</th:block></h3>
+
+        <p>
+            Word: <th:block th:text="${progress}">message</th:block></br>
+            <th:block th:text="${numGuessMessage}">message</th:block>
+        </p>
+    </div>
+
+    <form action="#" th:action="@{/game}" method="get" th:object = "${game}">
+        <button id="start-button">Start A New Game</button>
+    </form>
+</body>
+</html>
