@@ -14,4 +14,4 @@ Once gradle has been downloaded, clone the repo and run the Application file und
 Go to any web browser and you can start at http://localhost:8080/home and enjoy the game.
 
 
-![Cover Image](https://raw.githubusercontent.com/GumpacG/Hangman/master/src/main/resources/static/images/CoverPhoto.JPG)
+![Cover Image](https://raw.githubusercontent.com/GumpacG/Hangman/master/CoverImage.JPG)
