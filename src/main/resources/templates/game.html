@@ -1,0 +1,50 @@
+<!--
+    CMPT 213 Assignment 4
+    Author: Guian Gumpac
+    Email: ggumpac@sfu.ca
+    Student #: 301308462
+-->
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Hangman</title>
+        <link rel="stylesheet" th:href="@{/styles/main.css}"/>
+        <link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+    </head>
+    <body>
+        <h1>
+            <th:block th:text="${promptMessage.message}">message</th:block>
+        </h1>
+        <img th:src="${picture}"/>
+        <div id="stats">
+            <p>Status: <th:block th:text="${status}">message</th:block></p>
+            <p id="progress">Progress: <th:block th:text="${progress}">message</th:block></p>
+            <p><th:block th:text="${numGuessMessage}">message</th:block></p>
+            <p>You have guessed: <th:block th:text="${guesses}">message</th:block></p>
+
+            <form action="#" th:action="@{/game}" method="post" th:object = "${game}">
+                <label id="guess">Your guess: </label>
+                <input type="text" th:field="*{guess}"/>
+                <button id="guess-button" type="submit">Make a guess</button>
+            </form>
+
+            <form action="#" th:action="@{/home}" method="get">
+                <button id="home-button">
+                    <img th:src="@{/images/HomeButton.png}"/>
+                </button>
+            </form>
+        </div>
+
+        <div class="rules">
+            <h3 id="rules-header">Rules of the game:</h3>
+            <ul>Guess the word to win</ul>
+            <ul>You can guess one letter at a time or guess the whole word</ul>
+            <ul>If you guess a letter correctly, then it will appear in your progress</ul>
+            <ul>You are only allowed 5 incorrect guesses</ul>
+            <ul>You win if you guess the whole word</ul>
+            <ul>You lose if you reach 6 incorrect guesses and have not guessed the word</ul>
+        </div>
+    </body>
+</html>

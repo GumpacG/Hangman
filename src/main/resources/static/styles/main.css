@@ -1,0 +1,122 @@
+/**
+ * CMPT 213 Assignment 4
+ * Author: Guian Gumpac
+ * Email: ggumpac@sfu.ca
+ * Student #: 301308462
+ */
+
+
+html {
+    font-family: sans-serif;
+    background-color: #C0C0C0;
+}
+
+img {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#author-info {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 45px;
+}
+
+* {
+    font-family: 'Annie Use Your Telescope';
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.rules-home {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    padding-right: 20px;
+    border: 2px solid black;
+    background-color: #4d7676;
+    border-radius: 10px;
+}
+
+.rules {
+    display:inline-block;
+    position: absolute;
+    top: 120px;
+    width: 400px;
+    padding-right: 20px;
+    border: 2px solid black;
+    background-color: #4d7676;
+    border-radius: 10px;
+}
+
+#stats {
+    display:inline-block;
+    padding: 0px 50px;
+}
+
+#guess {
+    font-size: 20px;
+}
+
+#gameover {
+    display: block;
+    text-align: center;
+}
+
+#gameover-result {
+    font-size: 25px;
+}
+
+#gameover-img {
+    display:inline-block;
+    position: absolute;
+}
+
+#progress {
+    font-size: 25px;
+}
+
+#rules-header{
+    text-align: center;
+}
+
+#start-button{
+    background-color: rgb(92, 88, 36);
+    background-color: black;
+    color: white;
+    padding: 20px 42px;
+    display: block;
+    margin: auto;
+    font-size: 40px;
+    border-radius: 10px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+#home-button {
+    background-color: white;
+    padding: 5px 5px;
+    display: inline-block;
+    border-radius: 10px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+#guess-button {
+    background-color: rgb(92, 88, 36);
+    background-color: black;
+    color: white;
+    padding: 5px 5px;
+    font-size: 20px;
+    border-radius: 10px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+#welcome-link {
+    text-align: center;
+}
