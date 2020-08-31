@@ -3,7 +3,7 @@ This game is played on a browser and implemented using Java, CSS, HTML, Spring B
 
 The code follows an MVC (Model-View-Controller) framework to organize different responsibilities.
 
-Multiple games can be simultaneously played and can be accessed by http://localhost:8080/game/<id> where id is the game number.
+Multiple games can be simultaneously played and can be accessed by http://localhost:8080/game/id where id is the game number.
   
 
 ## Instructions
@@ -15,3 +15,8 @@ Go to any web browser and you can start at http://localhost:8080/home and enjoy 
 
 
 ![Cover Image](https://raw.github.com/GumpacG/Hangman/master/CoverPhoto.JPG)
+
+
+Sources:
+
+Home icon from https://material.io/
